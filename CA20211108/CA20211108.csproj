@@ -54,6 +54,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +65,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -72,12 +76,43 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Resources\T1.pdf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dapper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hipster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\love.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ninja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\robot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unicorn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UniMenes.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\wizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zombie.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
