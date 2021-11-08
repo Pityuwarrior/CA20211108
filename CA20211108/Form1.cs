@@ -36,7 +36,13 @@ namespace CA20211108
                 {
                     dgvMain.Rows.Add(r[0], r[1], r[2], r[3], r[4] + "kg", r.GetBoolean(5) ? "Csödör" : "Kanca");
                 }
+                connection.Close();
             }
+        }
+
+        private void bejelentkezesToolStrinpMenuItem_Click(object sender, EventArgs e) 
+        {
+            new FrmMain(ConnectionString).ShowDialog();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
